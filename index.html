@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <title>Codi Origin</title>
+
+    <style>
+      :root {
+        --yellow: #fff100;
+        --blue: #2f27ce;
+        --black: #111111;
+        --white: #ffffff;
+        --gray: #f5f5f5;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          'space mono',
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        background: linear-gradient(135deg, var(--white) 0%, var(--gray) 100%);
+        color: var(--black);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 900px;
+        text-align: center;
+        background: var(--white);
+        padding: 4rem;
+        border-radius: 32px;
+        box-shadow:
+          0 20px 60px rgba(47, 39, 206, 0.15),
+          0 8px 24px rgba(0, 0, 0, 0.08);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .container::before {
+        content: '';
+        position: absolute;
+        top: -120px;
+        right: -120px;
+        width: 280px;
+        height: 280px;
+        background: var(--yellow);
+        border-radius: 50%;
+        opacity: 0.25;
+      }
+
+      .container::after {
+        content: '';
+        position: absolute;
+        bottom: -140px;
+        left: -140px;
+        width: 320px;
+        height: 320px;
+        background: var(--blue);
+        border-radius: 50%;
+        opacity: 0.08;
+      }
+
+      .badge {
+        display: inline-block;
+        background: var(--yellow);
+        color: var(--black);
+        padding: 0.6rem 1rem;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
+
+      h1 {
+        font-size: clamp(2.8rem, 6vw, 5rem);
+        line-height: 1.05;
+        font-weight: 900;
+        margin-bottom: 1.5rem;
+        color: var(--blue);
+        letter-spacing: -0.04em;
+      }
+
+      p {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto 2.5rem;
+        color: #444;
+      }
+
+      .highlight {
+        color: var(--blue);
+        font-weight: 700;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--blue);
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 14px;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 25px rgba(47, 39, 206, 0.25);
+      }
+
+      .cta:hover {
+        transform: translateY(-3px);
+        background: #241db5;
+        box-shadow: 0 16px 35px rgba(47, 39, 206, 0.35);
+      }
+
+      .accent-line {
+        width: 100px;
+        height: 6px;
+        background: var(--yellow);
+        border-radius: 999px;
+        margin: 0 auto 2rem;
+      }
+
+      .h1-start {
+        color: #444;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 2.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="">
+      <span class="badge">🚀 Learn • Build • Create</span>
+
+      <h1><span class="h1-start">Welcome to </span>Codi Origin</h1>
+
+      <div class="accent-line"></div>
+
+      <p>
+        We're building the best online coding platform. We believe coding is for everyone. When
+        learning feels hard, it's often the
+        <span class="highlight">approach that needs to change</span>, not the learner.
+      </p>
+
+      <a
+        href="mailto:hello@codiorigin.com"
+        class="cta"
+        rel="nofollow noreferrer"
+        aria-label="Contact us via email"
+      >
+        Contact Us
+      </a>
+    </main>
+  </body>
+</html>
